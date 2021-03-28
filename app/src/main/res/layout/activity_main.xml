@@ -11,7 +11,11 @@
         android:layout_weight="3">
 
         <TextView
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:id="@+id/display"
             android:layout_width="match_parent"
+            android:textDirection="rtl"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginBottom="20dp"/>
@@ -29,39 +33,48 @@
             android:columnCount="4">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/reset"
                 android:layout_gravity="fill_horizontal"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:layout_margin="3sp"
                 android:text="@string/reset"
-                android:background="@drawable/btn_second_actions"/>
+                android:background="@drawable/btn_second_actions"
+                android:onClick="btnResetOnClick"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/module"
                 android:layout_gravity="fill_horizontal"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:layout_margin="3sp"
                 android:text="@string/module"
-                android:background="@drawable/btn_second_actions"/>
+                android:background="@drawable/btn_second_actions"
+                android:onClick="btnModuleOnClick"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/percent"
                 android:layout_gravity="fill_horizontal"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:layout_margin="3sp"
                 android:text="@string/percent"
-                android:background="@drawable/btn_second_actions"/>
+                android:background="@drawable/btn_second_actions"
+                android:onClick="btnPercentOnClick"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/divide"
                 android:layout_gravity="fill_horizontal"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:layout_margin="3sp"
                 android:text="@string/divide"
                 android:background="@drawable/btn_main_actions"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="btnDivideOnClick"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/seven"
                 android:layout_gravity="fill_horizontal"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
@@ -71,6 +84,7 @@
                 android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/eight"
                 android:layout_gravity="fill_horizontal"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
@@ -80,6 +94,7 @@
                 android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nine"
                 android:layout_gravity="fill_horizontal"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
@@ -89,15 +104,18 @@
                 android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/multiply"
                 android:layout_gravity="fill_horizontal"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:layout_margin="3sp"
                 android:text="@string/multiply"
                 android:background="@drawable/btn_main_actions"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="btnMultiplyOnClick"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/four"
                 android:layout_gravity="fill_horizontal"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
@@ -107,6 +125,7 @@
                 android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/five"
                 android:layout_gravity="fill_horizontal"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
@@ -116,6 +135,7 @@
                 android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/six"
                 android:layout_gravity="fill_horizontal"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
@@ -125,15 +145,18 @@
                 android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/minus"
                 android:layout_gravity="fill_horizontal"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:layout_margin="3sp"
                 android:text="@string/minus"
                 android:background="@drawable/btn_main_actions"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="btnMinusOnClick"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/one"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
@@ -143,6 +166,7 @@
                 android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/two"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
@@ -152,6 +176,7 @@
                 android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/three"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
@@ -161,15 +186,18 @@
                 android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
+
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:layout_margin="3sp"
                 android:text="@string/plus"
                 android:background="@drawable/btn_main_actions"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="btnPlusOnClick"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/zero"
                 android:layout_gravity="fill"
                 android:layout_columnSpan="2"
                 android:layout_columnWeight="1"
@@ -180,22 +208,26 @@
                 android:textColor="@color/white"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/myDouble"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:layout_margin="3sp"
                 android:text="@string/myDouble"
                 android:background="@drawable/btn_numbers"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="btnDoubleOnClick"/>
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/equal"
                 android:layout_gravity="fill"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:layout_margin="3sp"
                 android:text="@string/equal"
                 android:background="@drawable/btn_main_actions"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:onClick="btnEqualOnClick"/>
 
 
         </GridLayout>
