@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/night">
 
@@ -11,14 +12,14 @@
         android:layout_weight="3">
 
         <TextView
-            android:textColor="@color/white"
-            android:textSize="32sp"
             android:id="@+id/display"
             android:layout_width="match_parent"
-            android:textDirection="rtl"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:textDirection="rtl"
+            android:textSize="32sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -32,201 +33,128 @@
             android:layout_height="match_parent"
             android:columnCount="4">
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_second_actions"
+                app:backgroundTint="@null"
                 android:id="@+id/reset"
-                android:layout_gravity="fill_horizontal"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
                 android:text="@string/reset"
-                android:background="@drawable/btn_second_actions"
                 android:onClick="btnResetOnClick"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_second_actions"
+                app:backgroundTint="@null"
                 android:id="@+id/module"
-                android:layout_gravity="fill_horizontal"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
                 android:text="@string/module"
-                android:background="@drawable/btn_second_actions"
                 android:onClick="btnModuleOnClick"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_second_actions"
+                app:backgroundTint="@null"
                 android:id="@+id/percent"
-                android:layout_gravity="fill_horizontal"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
                 android:text="@string/percent"
-                android:background="@drawable/btn_second_actions"
                 android:onClick="btnPercentOnClick"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_primary_actions"
+                app:backgroundTint="@null"
                 android:id="@+id/divide"
-                android:layout_gravity="fill_horizontal"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
                 android:text="@string/divide"
-                android:background="@drawable/btn_main_actions"
-                android:textColor="@color/white"
                 android:onClick="btnDivideOnClick"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
                 android:id="@+id/seven"
-                android:layout_gravity="fill_horizontal"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
-                android:text="@string/seven"
-                android:background="@drawable/btn_numbers"
-                android:textColor="@color/white"/>
+                android:text="@string/seven"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
                 android:id="@+id/eight"
-                android:layout_gravity="fill_horizontal"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
-                android:text="@string/eight"
-                android:background="@drawable/btn_numbers"
-                android:textColor="@color/white"/>
+                android:text="@string/eight"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
                 android:id="@+id/nine"
-                android:layout_gravity="fill_horizontal"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
-                android:text="@string/nine"
-                android:background="@drawable/btn_numbers"
-                android:textColor="@color/white"/>
+                android:text="@string/nine"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_primary_actions"
+                app:backgroundTint="@null"
                 android:id="@+id/multiply"
-                android:layout_gravity="fill_horizontal"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
                 android:text="@string/multiply"
-                android:background="@drawable/btn_main_actions"
-                android:textColor="@color/white"
                 android:onClick="btnMultiplyOnClick"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
                 android:id="@+id/four"
-                android:layout_gravity="fill_horizontal"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
-                android:text="@string/four"
-                android:background="@drawable/btn_numbers"
-                android:textColor="@color/white"/>
+                android:text="@string/four"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
                 android:id="@+id/five"
-                android:layout_gravity="fill_horizontal"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
-                android:text="@string/five"
-                android:background="@drawable/btn_numbers"
-                android:textColor="@color/white"/>
+                android:text="@string/five"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
                 android:id="@+id/six"
-                android:layout_gravity="fill_horizontal"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
-                android:text="@string/six"
-                android:background="@drawable/btn_numbers"
-                android:textColor="@color/white"/>
+                android:text="@string/six"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_primary_actions"
+                app:backgroundTint="@null"
                 android:id="@+id/minus"
-                android:layout_gravity="fill_horizontal"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
                 android:text="@string/minus"
-                android:background="@drawable/btn_main_actions"
-                android:textColor="@color/white"
                 android:onClick="btnMinusOnClick"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
                 android:id="@+id/one"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
-                android:text="@string/one"
-                android:background="@drawable/btn_numbers"
-                android:textColor="@color/white"/>
+                android:text="@string/one"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
                 android:id="@+id/two"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
-                android:text="@string/two"
-                android:background="@drawable/btn_numbers"
-                android:textColor="@color/white"/>
+                android:text="@string/two"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
                 android:id="@+id/three"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
-                android:text="@string/three"
-                android:background="@drawable/btn_numbers"
-                android:textColor="@color/white"/>
+                android:text="@string/three"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_primary_actions"
+                app:backgroundTint="@null"
+                android:id="@+id/plus"
                 android:text="@string/plus"
-                android:background="@drawable/btn_main_actions"
-                android:textColor="@color/white"
                 android:onClick="btnPlusOnClick"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
                 android:id="@+id/zero"
-                android:layout_gravity="fill"
                 android:layout_columnSpan="2"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
-                android:text="@string/zero"
-                android:background="@drawable/btn_numbers"
-                android:textColor="@color/white"/>
+                android:text="@string/zero"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
                 android:id="@+id/myDouble"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
                 android:text="@string/myDouble"
-                android:background="@drawable/btn_numbers"
-                android:textColor="@color/white"
                 android:onClick="btnDoubleOnClick"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_primary_actions"
+                app:backgroundTint="@null"
                 android:id="@+id/equal"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_margin="3sp"
                 android:text="@string/equal"
-                android:background="@drawable/btn_main_actions"
-                android:textColor="@color/white"
                 android:onClick="btnEqualOnClick"/>
 
 
