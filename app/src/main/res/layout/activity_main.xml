@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/night">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:textDirection="rtl"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8">
+
+        <GridLayout
+            android:id="@+id/choice_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="4">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_second_actions"
+                app:backgroundTint="@null"
+                android:id="@+id/reset"
+                android:text="@string/reset"
+                android:onClick="btnResetOnClick"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_second_actions"
+                app:backgroundTint="@null"
+                android:id="@+id/module"
+                android:text="@string/module"
+                android:onClick="btnModuleOnClick"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_second_actions"
+                app:backgroundTint="@null"
+                android:id="@+id/percent"
+                android:text="@string/percent"
+                android:onClick="btnPercentOnClick"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_primary_actions"
+                app:backgroundTint="@null"
+                android:id="@+id/divide"
+                android:text="@string/divide"
+                android:onClick="btnDivideOnClick"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
+                android:id="@+id/seven"
+                android:text="@string/seven"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
+                android:id="@+id/eight"
+                android:text="@string/eight"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
+                android:id="@+id/nine"
+                android:text="@string/nine"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_primary_actions"
+                app:backgroundTint="@null"
+                android:id="@+id/multiply"
+                android:text="@string/multiply"
+                android:onClick="btnMultiplyOnClick"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
+                android:id="@+id/four"
+                android:text="@string/four"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
+                android:id="@+id/five"
+                android:text="@string/five"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
+                android:id="@+id/six"
+                android:text="@string/six"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_primary_actions"
+                app:backgroundTint="@null"
+                android:id="@+id/minus"
+                android:text="@string/minus"
+                android:onClick="btnMinusOnClick"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
+                android:id="@+id/one"
+                android:text="@string/one"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
+                android:id="@+id/two"
+                android:text="@string/two"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
+                android:id="@+id/three"
+                android:text="@string/three"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_primary_actions"
+                app:backgroundTint="@null"
+                android:id="@+id/plus"
+                android:text="@string/plus"
+                android:onClick="btnPlusOnClick"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
+                android:id="@+id/zero"
+                android:layout_columnSpan="2"
+                android:text="@string/zero"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_numbers"
+                app:backgroundTint="@null"
+                android:id="@+id/myDouble"
+                android:text="@string/myDouble"
+                android:onClick="btnDoubleOnClick"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/iButton_primary_actions"
+                app:backgroundTint="@null"
+                android:id="@+id/equal"
+                android:text="@string/equal"
+                android:onClick="btnEqualOnClick"/>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
