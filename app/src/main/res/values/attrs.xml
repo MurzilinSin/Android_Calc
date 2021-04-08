@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mainBtnBgColor" format="reference|color" />
+    <attr name="mainBtnBgColorPressed" format="reference|color" />
+    <attr name="numbBtnBgColor" format="reference|color" />
+    <attr name="numbBtnBgColorPressed" format="reference|color" />
+    <attr name="secondBtnBgColor" format="reference|color" />
+    <attr name="dayBtnBgColor" format="reference|color" />
+    <attr name="dayBtnBgColorPressed" format="reference|color" />
+    <attr name="nightBtnBgColor" format="reference|color" />
+    <attr name="nightBtnBgColorPressed" format="reference|color" />
+    <attr name="backgroundColor" format="reference|color" />
+    <attr name="settings" format="reference|color"/>
+    <attr name="textColor" format="reference|color"/>
+</resources>

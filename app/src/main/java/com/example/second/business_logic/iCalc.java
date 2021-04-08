@@ -3,7 +3,9 @@ package com.example.second.business_logic;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class iCalc implements Parcelable {
+import java.io.Serializable;
+
+public class iCalc implements Serializable {
     String value;
     double firstNumber, secondNumber, result;
     char action;
@@ -13,26 +15,6 @@ public class iCalc implements Parcelable {
     public iCalc(){}
 
     protected iCalc(Parcel in) {}
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {}
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    public static final Creator<iCalc> CREATOR = new Creator<iCalc>() {
-        @Override
-        public iCalc createFromParcel(Parcel in) {
-            return new iCalc(in);
-        }
-
-        @Override
-        public iCalc[] newArray(int size) {
-            return new iCalc[size];
-        }
-    };
 
     public char getAction() {
         return action;
