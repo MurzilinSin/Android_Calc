@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_margin">3sp</dimen>
+    <dimen name="button_weight_grid">1</dimen>
+    <dimen name="btn_settings_width_height">30dp</dimen>
+    <dimen name="displayText">32sp</dimen>
+</resources>
